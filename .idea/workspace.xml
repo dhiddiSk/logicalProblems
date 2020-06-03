@@ -2,45 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="563841a9-7339-4d12-ba91-4573fb0726c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Solving-logical-problems-using-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Solving-logical-problems-using-java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview_samples/src/Problem2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interview_samples/Probelm6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interview_samples/Problem1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interview_samples/Problem10.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interview_samples/Problem11.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interview_samples/Problem2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interview_samples/Problem3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interview_samples/Problem4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interview_samples/Problem5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interview_samples/Problem7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interview_samples/Problem8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interview_samples/Problem9.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interview_samples/Two_dimensional_Array.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/Probelm6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/Problem1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/Problem10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/Problem11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/Problem2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/Problem3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/Problem4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/Problem5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/Problem7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/Problem8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/Problem9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/Two_dimensional_Array.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/jobScheduler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interview_samples/solver1.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DCPOneTest.verifyingList">
+  <component name="RunManager">
     <configuration name="DCPOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DCPOne" />
       <module name="Solving-logical-problems-using-java" />
@@ -136,19 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DCPOneTest.verifyingList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Solving-logical-problems-using-java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DCPOneTest" />
-      <option name="METHOD_NAME" value="verifyingList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DCPOneTest.verifyingList" />
         <item itemvalue="Application.DCPOne" />
       </list>
     </recent_temporary>
@@ -215,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556452354026</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated with first task and deleted all the previous junk files">
+      <created>1591181111537</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591181111537</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -241,7 +201,8 @@
     <MESSAGE value="Done for the given array for the task" />
     <MESSAGE value="Updated" />
     <MESSAGE value=".." />
-    <option name="LAST_COMMIT_MESSAGE" value=".." />
+    <MESSAGE value="Updated with first task and deleted all the previous junk files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated with first task and deleted all the previous junk files" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
