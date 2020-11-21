@@ -1,114 +1,94 @@
-//This problem was asked by Facebook.
-//
-//        Given the mapping a = 1, b = 2, ... z = 26, and an encoded message, count the number of ways it can be decoded.
-//
-//        For example, the message '111' would give 3, since it could be decoded as 'aaa', 'ka', and 'ak'.
-//
-//        You can assume that the messages are decodable. For example, '001' is not allowed.
-//
-
-
-import java.util.HashMap;
-import java.util.Scanner;
+/*
+Given the mapping a = 1, b = 2, ... z = 26, and an encoded message, count the number of ways it can be decoded.
+For example, the message '111' would give 3, since it could be decoded as 'aaa', 'ka', and 'ak'.
+You can assume that the messages are decode. For example, '001' is not allowed.
+ */
 
 public class DaySeven {
 
+    public static final int NUM = 31;
 
-    /*
-    @Method encoder: it encodes the message or string into integer format.
-
-            for example: aaa to 111, abc to 123.
-     */
-
-    private String encoder(String message, HashMap<Character, Integer> hm) {
+    public String encoder(String message) {
         StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 0; i < message.length(); i++) {
 
-            int tempCharValue = hm.get(message.charAt(i));
-            stringBuilder.append(tempCharValue);
+        if (!(message == null)) {
+
+            for (int i = 0; i < message.length(); i++) {
+
+            /*
+            A letter’s position in Alphabet can easily be found by performing logical AND operation with the number 31.
+
+            Note that this is only applicable on letters and not special characters.
+
+            Every letter has an ASCII value which can be represented in binary form. Performing the bitwise and of this value with the number 31 will give the letter’s position in the alphabets.
+
+             */
+                int tempCharValue = message.charAt(i) & NUM;
+                stringBuilder.append(tempCharValue);
+            }
+
+
         }
-
         return stringBuilder.toString();
     }
 
+    //Verify in how many ways the encoded message can be decoded in different possible ways.
 
-    private int decoder(String encodedMessage) {
+    public int decoder(String encodedMessage) {
 
         int NoOfWays = 0;
-        //Now, verify the decoded message in different possible ways.
 
-        if(encodedMessage.length() == 1){
+        if (encodedMessage == null) {
+            return 0;
+        }
 
-            NoOfWays+=1;
+        if (encodedMessage.length() == 1) {
+
+            return 1;
 
         }
-//        if(encodedMessage.charAt(0) == 0||encodedMessage.isEmpty()){
-//
-//            NoOfWays+=0;
-//
-//        }
 
-        if(encodedMessage.length() == 2){
+        if (encodedMessage.charAt(0) == 0) {
 
-            int temp = Integer.parseInt(encodedMessage.substring(0,1));
+            return 0;
+
+        }
+
+        if (encodedMessage.length() == 2) {
+
+            int temp = Integer.parseInt(encodedMessage.substring(0, 1));
             /*
             Here if the temp value is less than 27, then there are two possible ways.
             for example let's consider 24: bd or x.
 
              */
 
-            if(temp < 27){
-                NoOfWays+=2;
+            if (temp < 27) {
+                return 2;
             }
 
             /*
             Here if the temp value is greater than 26 then there is only one possibility.
-            for example let's consider 28: which can be mapped to b and h only.
+            for example let's consider 28: which can be mapped to bh only.
              */
-
-
-            if(temp > 26){
-                NoOfWays+=1;
-            }
+            return 1;
         }
 
-        if(encodedMessage.length() > 2){
+        /*
+        In case if the length of the message is greater than two.
+         */
+        int temp2 = Integer.parseInt(encodedMessage.substring(0, 2));
 
-//            int temp1 = Integer.parseInt(String.valueOf(encodedMessage.charAt(0)));
-//            NoOfWays +=1;
+        if (temp2 < 27) {
+            NoOfWays = NoOfWays + 2 + decoder(encodedMessage.substring(1, encodedMessage.length() - 1));
+        }
 
-            int temp2 = Integer.parseInt(encodedMessage.substring(0,2));
-
-
-
-            if(temp2 < 27){
-                 NoOfWays = NoOfWays + 2 + decoder(encodedMessage.substring(1,encodedMessage.length()-1));
-             }
-
-            if(temp2 > 26){
-                NoOfWays = NoOfWays + 1 + decoder(encodedMessage.substring(1,encodedMessage.length()-1));
-             }
+        if (temp2 > 26) {
+            NoOfWays = NoOfWays + 1 + decoder(encodedMessage.substring(1, encodedMessage.length() - 1));
         }
 
         return NoOfWays;
 
     }
-
-    public static void main(String[] args) {
-
-        DCPSeven object = new DCPSeven();
-        HashMap<Character,Integer> hashMap = new HashMap<Character, Integer>();
-        int k = 1;
-        for (char ch ='a'; ch <='z'; ch++) {
-            hashMap.put(ch, k);
-            k += 1;
-        }
-
-        Scanner sc = new Scanner(System.in);
-        String inputMessage = sc.nextLine();
-        String encodedMessage = object.encoder(inputMessage, hashMap);
-        System.out.println("The encoded message is "+encodedMessage);
-        System.out.println("No. of ways the message can be decoded is "+object.decoder(encodedMessage));
-
-    }
 }
+
