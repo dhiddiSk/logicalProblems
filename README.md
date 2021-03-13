@@ -65,13 +65,20 @@ Given an N by K matrix where the nth row and kth column represents the cost to b
 An automated assembly line equipped with state of the art Rockwell Automation controllers, has an interesting inaugural process for starting
 up each of their lines. With the initiation of each line for the first time, the plant manager has his employees do the following:
 
-For the one thousand one hundred PLCs on each line and one thousand one hundred employees at the plant that participate in this the startup. The plant manager asks the first employee to go to every PLC and place it in RUN mode. Then he has the second employee go to every second PLC and place it in Program mode. The third goes to every third PLC and, if it is in PROGRAM mode, they place it in RUN mode, and if it is in RUN mode, they place it in PROGRAM mode. The fourth employee does this to every fourth PLC, and so on. After the process is completed with the one
-thousand one hundredth employee, how many PLCs are in RUN mode?
+1. For the one thousand one hundred PLCs on each line and one thousand one hundred employees at the plant that participate in this the startup.
+2. The plant manager asks the first employee to go to every PLC and place it in RUN mode.
+3. Then he has the second employee go to every second PLC and place it in Program mode. 
+4. The third goes to every third PLC and, if it is in PROGRAM mode, they place it in RUN mode, and if it is in RUN mode, they place it in PROGRAM mode.
+5. The fourth employee does this to every fourth PLC, and so on. 
+
+After the process is completed with the one thousand one hundredth employee, how many PLCs are in RUN mode?
 [SourceCode](java/src/main/java/LineStartupAlgorithm.java),
 [Test](java/src/main/test/LineStartupAlgortihmTest.java)
+
+
 ---
 
-#### Encoding and decoding strings, rotations
+#### Task : Encoding and decoding strings, rotations
 
 Create a class with two methods, "encode" and "decode". The methods have some properties
 outlined below:
