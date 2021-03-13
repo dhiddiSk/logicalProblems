@@ -13,7 +13,7 @@ public class DayOne {
 
     public boolean verifyingList(List<Integer> elementList, int k) {
 
-        if (k < 0 || elementList.isEmpty()) {
+        if (elementList.isEmpty()) {
 
             return false;
         }
@@ -21,13 +21,13 @@ public class DayOne {
 
         // first sort the elements of the list in ascending or descending order
         Collections.sort(elementList);
-        //any given number 'x' can be sum of other two numbers which are less than the x. this applies in case if the list doesn't contains zero element
 
+        //any given number 'x' can be sum of other two numbers which are less than the x. This applies in case if the list doesn't contains zero element
         int min = Collections.min(elementList);
         int temp = 0;
         boolean result = false;
 
-        // this condition checks if the list contains the k value and zero, this means k + 0 = k
+        // check if the list contains the k value and zero, this means k + 0 = k
         if (elementList.contains(0) && elementList.contains(k)) {
             return true;
         }
@@ -41,9 +41,7 @@ public class DayOne {
 
        case 1: If we verify with the adjacent elements of the array/list then, there is chance of missing some cases
        case 2: If we start comparing each element with all the elements then it can have a very large time complexity.
-       case 3: So, the simple solution is-> K = temp + someElementInTheList. We have K and someElementInTheList, then easy to find the temp.
-
-         Let's work with case 3.
+       So, the simple solution is-> K = temp + someElementInTheList. We have K and someElementInTheList, then easy to find the temp.
          */
 
         else {

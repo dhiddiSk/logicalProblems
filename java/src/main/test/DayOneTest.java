@@ -13,17 +13,16 @@ public class DayOneTest {
 
 
     @Test
-    public void verifyingList() {
-
-        assertFalse(obj.verifyingList(integerList, -1));
+    public void verifyingListTest() {
 
         int[] array = {10, -10, 13, -2, 1};
         for (int value : array) {
             integerList.add(value);
         }
+
+        assertTrue(obj.verifyingList(integerList, -1));
         assertTrue(obj.verifyingList(integerList, 14));
         assertFalse(obj.verifyingList(integerList, 1));
-        assertFalse(obj.verifyingList(integerList, -1));
     }
 }
 
