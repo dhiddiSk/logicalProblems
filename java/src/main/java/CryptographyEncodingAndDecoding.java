@@ -1,28 +1,18 @@
 public class CryptographyEncodingAndDecoding {
 
-    String message = null;
-    int rotations = 0;
-    int messageLength=0;
+
     StringBuilder builder;
 
-    CryptographyEncodingAndDecoding(String message, int rotations) throws IllegalArgumentException{
+    public String encode(String message, int rotations)throws IllegalArgumentException {
 
-        this.message = message;
-        this.rotations = rotations;
-        messageLength = message.length();
-
-    }
-
-    public String encode() {
-
-        if (messageLength == 0 || rotations < 1) {
+        if (message.length() == 0 || rotations < 1) {
             return message;
         }
 
         builder = new StringBuilder();
 
         // Iterate through every character of given string and perform the encoding operations
-        for (int ch = 0; ch < messageLength; ch++) {
+        for (int ch = 0; ch < message.length(); ch++) {
             char c = message.charAt(ch);
             int modulusResult;
 
@@ -90,9 +80,9 @@ public class CryptographyEncodingAndDecoding {
     }
 
 
-    public String decode(){
+    public String decode(String message, int rotations)throws IllegalArgumentException{
 
-        if (messageLength == 0 || rotations < 1) {
+        if (message.length() == 0 || rotations < 1) {
             return message;
         }
 
@@ -101,7 +91,7 @@ public class CryptographyEncodingAndDecoding {
 
 
         // Iterate through every character of given string and perform the decoding operations
-        for (int ch = 0; ch < messageLength; ch++) {
+        for (int ch = 0; ch < message.length(); ch++) {
 
             char c = message.charAt(ch);
             int difference;
@@ -166,10 +156,10 @@ public class CryptographyEncodingAndDecoding {
 
     public static void main(String[] args) {
 
-        CryptographyEncodingAndDecoding obj = new CryptographyEncodingAndDecoding( "BTWQI", 5);
+        CryptographyEncodingAndDecoding obj = new CryptographyEncodingAndDecoding();
 
-        System.out.println("The result after encoding the string innoWake rules with 9 rotations is : " + obj.encode());
-        System.out.println("The result after decoding the string IUHUR with 6 rotations is : " + obj.decode());
+        System.out.println("The result after encoding the string innoWake rules with 9 rotations is : " + obj.encode("HELLO", 5));
+        System.out.println("The result after decoding the string IUHUR with 6 rotations is : " + obj.decode("BTWQI", 5));
 
     }
 

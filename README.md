@@ -69,3 +69,33 @@ For the one thousand one hundred PLCs on each line and one thousand one hundred 
 thousand one hundredth employee, how many PLCs are in RUN mode?
 [SourceCode](java/src/main/java/LineStartupAlgorithm.java),
 [Test](java/src/main/test/LineStartupAlgortihmTest.java)
+---
+
+#### Encoding and decoding strings, rotations
+
+Create a class with two methods, "encode" and "decode". The methods have some properties
+outlined below:
+ 1. Each method takes a message String and an int representing the number of rotations in the code.
+ 2. Each method returns a String, which is the encoded or decoded message. Encoding and decoding only affects alphabetical characters that  are contained in the US ASCII standard.
+ 3. All other characters are unaffected.
+ 4. The encoding of a character with a given number of rotations is the character that alphabetically succeeds its "rotations" times. When rotating an alphabetical character, to rotate past the end of the alphabet is to continue on the other end of the alphabet.
+ For example, 'e' encoded with 5 rotations is 'j'; 'z' encoded with 1 rotation is
+'a'; 'X' encoded with 7 rotations is 'E'.
+
+ 5. The decoding of a character is the inverse function of the encoding of a character.
+o For example, 'j' decoded with 5 rotations is 'e'; 'a' decoded with 1 rotation is 'z'; 'E'
+decoded with 7 rotations is 'X'.
+
+For example, the word “HELLO” encoded with 5 rotations is “MJQQT”. The word “BTWQI”
+decoded with 5 rotations is “WORLD”.
+[SourceCode](java/src/main/java/CryptographyEncodingAndDecoding.java),
+[Test](java/src/main/test/CryptographyTaskTest.java)
+
+
+
+
+
+
+
+
+
