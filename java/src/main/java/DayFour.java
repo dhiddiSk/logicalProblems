@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 /*
 Given an array of integers, find the first missing positive integer in linear time and constant space.
 
@@ -9,20 +11,17 @@ You can modify the input array in-place.
 */
 public class DayFour {
 
-    public int findMissElement(int[] array) {
+    public int findMissElement(int[] array) throws IllegalArgumentException  {
         /*
         As per the given question, the goal is to find the least positive number missing in the given array.
         1) Integer '0' is neither positive nor negative number. So the first positive number would be 1, now traverse through whole array and check for the value matching the for loop indexes.
-        2) If we find all the values are present in the given array then the least missing positive number would be lenghtOfArray + 1
+        2) If we find all the values are present in the given array then the least missing positive number would be lengthOfArray + 1
         */
 
         // for suppose the array is [0, -1, 2, 3, 5, 7, -2, 9]
 
-        if(array==null){
-            return -1;
-        }
-
-
+        // Throws an NPE with a custom error message if obj is null
+        Objects.requireNonNull(array, "The parameter array must not be null");
 
         for (int index = 0; index < array.length; ) {
 
@@ -52,5 +51,6 @@ public class DayFour {
     }
 
 }
+
 
 
