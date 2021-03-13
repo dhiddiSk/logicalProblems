@@ -1,22 +1,28 @@
-public class CryptographyTask {
+public class CryptographyEncodingAndDecoding {
 
+    String message = null;
+    int rotations = 0;
+    int messageLength=0;
+    StringBuilder builder;
 
-    public String encode(String message, int rotations) {
+    CryptographyEncodingAndDecoding(String message, int rotations) throws IllegalArgumentException{
 
-        int messageLength = message.length();
+        this.message = message;
+        this.rotations = rotations;
+        messageLength = message.length();
 
-        if (messageLength < 1) {
-            return null;
-        }
-        if (rotations < 1) {
+    }
+
+    public String encode() {
+
+        if (messageLength == 0 || rotations < 1) {
             return message;
         }
 
-        StringBuilder builder = new StringBuilder();
+        builder = new StringBuilder();
 
         // Iterate through every character of given string and perform the encoding operations
         for (int ch = 0; ch < messageLength; ch++) {
-
             char c = message.charAt(ch);
             int modulusResult;
 
@@ -84,26 +90,21 @@ public class CryptographyTask {
     }
 
 
-    public String decode(String message, int rotations) throws IllegalArgumentException {
+    public String decode(){
 
-        int messageLength = message.length();
-
-        if (messageLength < 1) {
-            return null;
-        }
-        if (rotations < 1) {
+        if (messageLength == 0 || rotations < 1) {
             return message;
         }
 
         // StringBuilder is initialized to build the string formed after decoding.
-        StringBuilder builder = new StringBuilder();
+         builder = new StringBuilder();
 
 
         // Iterate through every character of given string and perform the decoding operations
         for (int ch = 0; ch < messageLength; ch++) {
 
             char c = message.charAt(ch);
-
+            int difference;
 
             // As per given conditions, decode only the alphabetical characters which satisfy the ASCII Standards
             if ((((int) c >= 65) && ((int) c <= 90)) || (((int) c >= 97) && ((int) c <= 122))) {
@@ -120,7 +121,7 @@ public class CryptographyTask {
                          */
 
                 int asciiCharValueAfterDifference;
-                int difference = 0;
+
                 if (Character.isUpperCase(c)) {
 
                     if (asciiCharValueAfterRotation < 65) {
@@ -165,12 +166,13 @@ public class CryptographyTask {
 
     public static void main(String[] args) {
 
-        CryptographyTask obj = new CryptographyTask();
+        CryptographyEncodingAndDecoding obj = new CryptographyEncodingAndDecoding( "BTWQI", 5);
 
-        System.out.println("The result after encoding the string innoWake rules with 9 rotations is : " + obj.encode("innoWake rules", 9));
-        System.out.println("The result after decoding the string IUHUR with 6 rotations is : " + obj.decode("IUHUR", 6));
+        System.out.println("The result after encoding the string innoWake rules with 9 rotations is : " + obj.encode());
+        System.out.println("The result after decoding the string IUHUR with 6 rotations is : " + obj.decode());
 
     }
 
 
 }
+
