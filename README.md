@@ -1,6 +1,4 @@
-Logical quetions(/java/src/main/java) from tech gaints.
-
-I'm glad to hear from you if there are any improvements to be made or any bugs found to be handled.
+#### Logical quetions(/java/src/main/java) from tech gaints.I'm glad to hear from you if there are any improvements to be made or any bugs found to be handled.
 
 ---
 ### Day 01
