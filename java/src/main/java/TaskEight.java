@@ -14,12 +14,12 @@ get_last(i): gets the ith last element from the log. i is guaranteed to be small
 You should be as efficient with time and space as possible.
 
 */
-public class DaySixteen {
+public class TaskEight {
 
    private int N_Orders;
    private ArrayList<Integer> Ids = new ArrayList<Integer>();
 
-    public DaySixteen(int N_Orders) {
+    public TaskEight(int N_Orders) {
 
         this.N_Orders = N_Orders;
     }

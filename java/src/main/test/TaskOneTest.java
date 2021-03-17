@@ -6,9 +6,9 @@ import java.util.List;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class DayOneTest {
+public class TaskOneTest {
 
-    DayOne obj = new DayOne();
+    TaskOne obj = new TaskOne();
     List<Integer> integerList = new ArrayList<Integer>();
 
 

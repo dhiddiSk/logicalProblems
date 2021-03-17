@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-public class DayFifteenTest {
+public class TaskSevenTest {
     @Test
     public void pickElement(){
 
-        DCPFifteen object = new DCPFifteen();
+        TaskSeven object = new TaskSeven();
 
         int[] streamInput = {1,2,3,4};
 

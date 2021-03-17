@@ -4,11 +4,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 
-public class ElevenTest {
+public class TaskSixTest {
     @Test
     public void testEleven(){
 
-        DayEleven eleven = new DayEleven();
+        TaskSix obj = new TaskSix();
 
         Set<String> toQuery = new HashSet<>();
 
@@ -19,7 +19,7 @@ public class ElevenTest {
 
         Set<String> afterQuery = new HashSet<>();
 
-       afterQuery = eleven.StringQuery("sai", toQuery);
+       afterQuery = obj.StringQuery("sai", toQuery);
 
        Assert.assertTrue(afterQuery.contains("sai"));
        Assert.assertTrue(afterQuery.contains("saikrishna"));

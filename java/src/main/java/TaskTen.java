@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.lang.*;
 import java.util.stream.IntStream;
 
-public class DayNinteen {
+public class TaskTen {
 
 
      // Here the matrix argument is passed to the cal method which calculates the cos

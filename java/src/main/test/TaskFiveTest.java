@@ -1,9 +1,9 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class DaySevenTest {
+public class TaskFiveTest {
 
-    DaySeven obj = new DaySeven();
+    TaskFive obj = new TaskFive();
 
 
     @Test

@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class DayEleven {
+public class TaskSix {
 
     public Set<String> StringQuery(String prefix, Set Strings){
 

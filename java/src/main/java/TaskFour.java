@@ -11,7 +11,7 @@ interface Choice {
 }
 
 
-public class DayFive {
+public class TaskFour {
 
     public  static void cons(int i, int i1){
         // So, it has to return me the pair function.

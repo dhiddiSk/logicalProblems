@@ -8,7 +8,7 @@ For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
 import java.util.Collections;
 import java.util.List;
 
-public class DayOne {
+public class TaskOne {
 
 
     public boolean verifyingList(List<Integer> elementList, int k) {

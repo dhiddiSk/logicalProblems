@@ -39,11 +39,11 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class DaySeventeen {
+public class TaskNine {
 
   // String treePath;
 
-//    DaySeventeen(String treePath){
+//    TaskNine(String treePath){
 //
 //        //As per the given condition, the file name must contain a period('.') for sure.
 //        if(treePath.contains(".")){
@@ -126,7 +126,7 @@ public class DaySeventeen {
     //Now check with every subdir, whether it contains any other subsubdirs, while parsing check which subdir or subsubdir contains the file. After that check for the longest path, which is just chec
 
     public static void main(String[] args) {
-        DaySeventeen obj = new DaySeventeen();
+        TaskNine obj = new TaskNine();
         obj.splitTheStringToDirectories("dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext");
 
     }

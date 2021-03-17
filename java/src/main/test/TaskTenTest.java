@@ -3,9 +3,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class DayNinteenTest {
+public class TaskTenTest {
 
-   DayNinteen obj = new DayNinteen();
+   TaskTen obj = new TaskTen();
 
     @Test
     public void minCostTest(){

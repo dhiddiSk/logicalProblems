@@ -1,10 +1,10 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class DayTwoTest {
+public class TaskTwoTest {
     int[] array = {10, 8, 9, 3, 1};
     int[] array2 = {1, 2, 3, 4, 5};
-    DayTwo DCPTwoobject = new DayTwo();
+    TaskTwo DCPTwoobject = new TaskTwo();
     int[] emptyArray = {};
 
 

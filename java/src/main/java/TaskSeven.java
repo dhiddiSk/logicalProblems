@@ -17,7 +17,7 @@ solution: Let's consider an array, where element is linked with it's index. Find
 
 import java.util.Random;
 
-public class DayFifteen {
+public class TaskSeven {
 
     public int randomPick(int[] stream){
 
