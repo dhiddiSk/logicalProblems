@@ -8,10 +8,8 @@ public class TaskFive {
 
     public static final int NUM = 31;
 
-    public String encoder(String message) {
+    public String encoder(String message) throws IllegalArgumentException {
         StringBuilder stringBuilder = new StringBuilder();
-
-        if (!(message == null)) {
 
             for (int i = 0; i < message.length(); i++) {
 
@@ -27,14 +25,12 @@ public class TaskFive {
                 stringBuilder.append(tempCharValue);
             }
 
-
-        }
         return stringBuilder.toString();
     }
 
     //Verify in how many ways the encoded message can be decoded in different possible ways.
 
-    public int decoder(String encodedMessage) {
+    public int decoder(String encodedMessage) throws IllegalArgumentException{
 
         int NoOfWays = 0;
 
@@ -43,16 +39,12 @@ public class TaskFive {
         }
 
         if (encodedMessage.length() == 1) {
-
-            return 1;
-
-        }
+	     return 1;
+	}
 
         if (encodedMessage.charAt(0) == 0) {
-
             return 0;
-
-        }
+	}
 
         if (encodedMessage.length() == 2) {
 

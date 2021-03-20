@@ -18,7 +18,7 @@ import java.util.stream.IntStream;
 public class TaskTen {
 
 
-     // Here the matrix argument is passed to the cal method which calculates the cos
+     // Here the matrix argument is passed to the calMinCost method which calculates the cost
     public int calMinCost(int[][] matrix){
                 int totalNumberOfHouses = matrix.length;
                 if(totalNumberOfHouses == 0){
