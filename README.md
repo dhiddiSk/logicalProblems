@@ -170,3 +170,19 @@ For example, the word “HELLO” encoded with 5 rotations is “MJQQT”. The w
 decoded with 5 rotations is “WORLD”.
 [SourceCode](java/src/main/java/CryptographyEncodingAndDecodingTask.java),
 [Test](java/src/main/test/CryptographyTaskTest.java)
+
+---
+
+### Task: Google Challenge1
+
+The task was to generate an large prime number in string format, which is resulted after the concatenation of all the prime numbers from the beginning. This string is used by an minions leader to assign the numbers to all the minion soilders. The minions leader wants to randomly 
+chose a number at certain index such that every minion will be having one index which are assigned five numbers next to the current requested index.
+
+
+
+
+
+
+
+
+
