@@ -78,7 +78,6 @@ You should be as efficient with time and space as possible.
 [SourceCode](java/src/main/java/TaskEight.java)
 
 ---
-
 ### Task 09
 
 Suppose we represent our file system by a string in the following manner:
@@ -133,10 +132,8 @@ Follow-up: Can you do this in O(N) time and constant space?
 
 [SourceCode](java/src/main/java/TaskEleven.java)
 
-
-
 ---
-#### Task: assembly line
+#### Task: 12
 An automated assembly line equipped with state of the art Rockwell Automation controllers, has an interesting inaugural process for starting
 up each of their lines. With the initiation of each line for the first time, the plant manager has his employees do the following:
 
@@ -151,7 +148,7 @@ After the process is completed with the one thousand one hundredth employee, how
 [Test](java/src/main/test/LineStartupAlgortihmTaskTest.java)
 
 ---
-#### Task: Encoding and decoding strings, rotations
+#### Task: 13
 
 Create a class with two methods, "encode" and "decode". The methods have some properties
 outlined below:
@@ -172,17 +169,29 @@ decoded with 5 rotations is “WORLD”.
 [Test](java/src/main/test/CryptographyTaskTest.java)
 
 ---
-
-### Task: Google Challenge1
+### Task: 14
 
 The task was to generate an large prime number in string format, which is resulted after the concatenation of all the prime numbers from the beginning. This string is used by an minions leader to assign the numbers to all the minion soilders. The minions leader wants to randomly 
 chose a number at certain index such that every minion will be having one index which are assigned five numbers next to the current requested index.
 
+---
+### Task: 15
 
+The task was to find the minimum number of rooms required, in an array of time intervals (start, end) for classroom lectures (possibly overlapping)
+[SourceCode](javaScript/minimumClassRoomsRequired.js)
 
+---
+### Task: 16
 
+Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string "bedbathandbeyond", return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond'].
 
+If there is more than one possible reconstruction of array, return any of them. If there is no possible reconstruction, then return null.
+For example, given the set of words 'quick', 'brown', 'the', 'fox', and the string "thequickbrownfox", you should return ['the', 'quick', 'brown', 'fox'].
 
+[SourceCode](javaScript/orginalSentence.js)
 
+---
+### Task: 17
 
-
+The task was to validate if the brackets are balanced or not.
+[SourceCode](javaScript/validateBalancedBrackets.js)
