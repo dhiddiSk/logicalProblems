@@ -8,15 +8,17 @@ You can return the answer in any order.
 */
 
 
-const twoSum = function(nums, target) {
-    
-    let indexMaps = new Map();
-   
-   for(let i = 0; i < nums.length; i++){
-      
-       if(indexMaps.has(nums[i])) return [indexMaps.get(nums[i]), i];
-       
-       indexMaps.set(target-nums[i], i);
-   }
-   
+const twoSum = function (nums, target) {
+
+    const numberMap = new Map();
+
+    for (const [index, number] of Object.entries(nums)) {
+
+        if (numberMap.has(number)) return [numberMap.get(number), index];
+
+        numberMap.set(target - number, index);
+    }
+
 };
+// test example
+console.log(twoSum([15, 7, 11, 2], 9));

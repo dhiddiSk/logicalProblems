@@ -4,7 +4,7 @@ Given an array of time intervals (start, end) for classroom lectures (possibly o
 For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
 
 */
-function minimumClassRoomsRequired(...classIntervals) {
+const minimumClassRoomsRequired = function(...classIntervals) {
         
         const startingIntervalTime = [];
         const endingIntervalTime = [];
@@ -21,10 +21,10 @@ function minimumClassRoomsRequired(...classIntervals) {
         startingIntervalTime.sort(function (a, b) { return a - b });
         endingIntervalTime.sort(function (a, b) { return a - b });
 
-        for (let i = 0; i < startingIntervalTime.length; i++) {
-            for (let j = 0; j < endingIntervalTime.length; j++) {
+        for (const startTime of startingIntervalTime){
+            for(const endTime of endingIntervalTime){
                 // if startingIntervalTime point is less than any of the ending points then increment the number of rooms roomCount
-                if (startingIntervalTime[i] < endingIntervalTime[j]) {
+                if (startTime < endTime) {
                     numberOfmeetingInParallel++;
                     roomCount.push(numberOfmeetingInParallel);
                     break;

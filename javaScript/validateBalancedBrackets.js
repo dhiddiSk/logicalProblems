@@ -2,16 +2,16 @@
 
 const validateBracketString = "{}({}";
 
-let openBracket = '(';
-let closeBracket = ')';
-let openSquareBracket = '[';
-let closeSquareBracket = ']';
-let openFlowerBracket = '{';
-let closeFloweBracket = '}';
+const openBracket = '(';
+const closeBracket = ')';
+const openSquareBracket = '[';
+const closeSquareBracket = ']';
+const openFlowerBracket = '{';
+const closeFloweBracket = '}';
 
 let arrayOpenbracketsQueue = [];
 
-function validateBalancedBrackets(stringToValidate){
+const validateBalancedBrackets = function(stringToValidate){
 
     const stringLength = stringToValidate.length;
 

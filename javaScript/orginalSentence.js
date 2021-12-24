@@ -5,21 +5,22 @@ For example, given the set of words 'quick', 'brown', 'the', 'fox', and the stri
 Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string "bedbathandbeyond", return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond'].
 */
 
-function orginalSentence(sentence, ...words) {
-    
-    let orderedWords = [];
-    let start = 0; let end = 1; let sentenceLength = sentence.length;
+const orginalSentence = function (sentence, ...words) {
 
-    for (let letters = 0; letters < sentenceLength; letters++) {
+    let orderedWords = [];
+    let start = 0; let end = 1;
+
+    for (const letter of sentence) {
+
         let tempStringHolder = sentence.substring(start, end);
         if (!(words.includes(tempStringHolder))) {
-                end++;
-                continue;
-            }else if (words.includes(tempStringHolder)) {
-                orderedWords.push(tempStringHolder);
-                start = end;
-                end = end + 1;
-            }
+            end++;
+            continue;
+        } else if (words.includes(tempStringHolder)) {
+            orderedWords.push(tempStringHolder);
+            start = end;
+            end = end + 1;
+        }
     }
     return orderedWords;
 
