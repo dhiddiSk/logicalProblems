@@ -2,12 +2,22 @@
   "name": "logicalinterviewproblems",
   "version": "1.0.0",
   "description": "solving interview problems",
+  "type": "module",
+  "jest": {
+    "verbose": true
+  },
   "scripts": {
     "test": "jest"
+  },
+  "directories": {
+    "test": "tests"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jest": "^28.1.0"
+  },
+  "dependencies": {
+    "@types/jest": "^27.5.0"
   }
 }
