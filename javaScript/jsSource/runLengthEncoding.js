@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 /*
 Good morning! Here's your coding interview problem for today.
 
@@ -13,26 +13,31 @@ You can assume the string to be encoded have no digits and consists solely of al
 You can assume the string to be decoded is valid.
 */
 
-const stringEncoder = function (inputString) {
-    let seen = '';
-    let finalEncodedString = '';
-    let count = 0;
+const inputStringEncoder = function (inputString) {
+  let encoding = "",
+    count,
+    previousChar,
+    i;
 
-    for (const letter of inputString) {
-        if (letter == seen) {
-            count++;
-        }
-        else {
-            finalEncodedString = finalEncodedString + count + seen;
-            count = 1;
-            seen = letter;
-        }
-
-
+  if (inputString.length > 0) {
+    for (
+      count = 1, previousChar = inputString[0], i = 1;
+      i < inputString.length;
+      i++
+    ) {
+      if (previousChar === inputString[i]) {
+        count += 1;
+      } else {
+        encoding = encoding + count + previousChar;
+        count = 1;
+        previousChar = inputString[i];
+      }
     }
-    finalEncodedString = finalEncodedString + count + seen; // This is to add the final set of characters.
 
-    return finalEncodedString.slice(0); // To return the final string without leading '0'.
-}
+    encoding = encoding + count + previousChar;
 
-console.log(stringEncoder("AAAABBCCDAA"));
+    return encoding;
+  }
+};
+
+module.exports = inputStringEncoder;

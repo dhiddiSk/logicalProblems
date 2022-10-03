@@ -20,7 +20,7 @@ max(), which returns the maximum value in the stack currently. If there are no e
 3. After completion of writing code, check the code if it's compatible with the javascript notes.
 */
 
-export default class StackMethodsImplementation {
+class StackMethodsImplementation {
     
     constructor(stackArray){
         this.stackArray = stackArray;
@@ -56,4 +56,4 @@ export default class StackMethodsImplementation {
     }
 }
 
-//export default StackMethodsImplementation;
+module.exports = StackMethodsImplementation;

@@ -1,7 +1,7 @@
 {
-  "name": "logicalinterviewproblems",
+  "name": "logicallogicalproblems",
   "version": "1.0.0",
-  "description": "solving interview problems",
+  "description": "solving logical problems",
   "type": "module",
   "jest": {
     "verbose": true
@@ -10,14 +10,11 @@
     "test": "jest"
   },
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^28.1.0"
-  },
-  "dependencies": {
-    "@types/jest": "^27.5.0"
+    "jest": "^28.1.3"
   }
 }

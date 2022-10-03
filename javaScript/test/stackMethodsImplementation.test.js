@@ -1,11 +1,11 @@
 'use strict'
-import '../jsSource/stackMethodsImplementation.js';
 
+const StackMethodsImplementation = require('../jsSource/stackMethodsImplementation.js');
 describe('testing stackMethodImplementations', () => {
 
     let stackArray = [];
     
-    const stackObject = new stack(stackArray);
+    const stackObject = new StackMethodsImplementation(stackArray);
     
     test('popup method', () => {
         expect(stackObject.pop()).toBeNull;
@@ -19,7 +19,9 @@ describe('testing stackMethodImplementations', () => {
 
     test('max method', () => {
         stackArray = [1, 2, 9, 6];
+        for (let arrayElement of stackArray) {
+            stackObject.push(arrayElement);
+        }
         expect(stackObject.max()).toEqual(9);
     });
-
 });
