@@ -14,29 +14,29 @@ You can assume the string to be decoded is valid.
 */
 
 const inputStringEncoder = function (inputString) {
-  let encoding = "",
-    count,
-    previousChar,
-    i;
+  let encodedString = "",
+      sameCharCount,
+      previousChar,
+      i;
 
   if (inputString.length > 0) {
     for (
-      count = 1, previousChar = inputString[0], i = 1;
+      sameCharCount = 1, previousChar = inputString[0], i = 1;
       i < inputString.length;
       i++
     ) {
       if (previousChar === inputString[i]) {
-        count += 1;
+        sameCharCount += 1;
       } else {
-        encoding = encoding + count + previousChar;
-        count = 1;
+        encodedString = encodedString + sameCharCount + previousChar;
+        sameCharCount = 1;
         previousChar = inputString[i];
       }
     }
 
-    encoding = encoding + count + previousChar;
+    encodedString = encodedString + sameCharCount + previousChar;
 
-    return encoding;
+    return encodedString;
   }
 };
 
