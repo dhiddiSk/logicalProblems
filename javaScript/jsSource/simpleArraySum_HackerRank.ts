@@ -1,8 +1,8 @@
-const arraySum = function(arraySize, array){
-    let sumOfArray=0;
-    for (let arrayIndex = 0; arrayIndex < arraySize; arrayIndex ++) {
-        sumOfArray = sumOfArray + array[arrayIndex];
-    }
-    return sumOfArray;
+const arraySum = function (arraySize: number, array: number[]): number {
+  let sumOfArray: number = 0
+  for (let arrayIndex = 0; arrayIndex < arraySize; arrayIndex++) {
+    sumOfArray = sumOfArray + array[arrayIndex]
+  }
+  return sumOfArray
 }
-module.exports = arraySum;
+export { arraySum }
