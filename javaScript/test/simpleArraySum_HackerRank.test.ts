@@ -1,6 +1,6 @@
 'use strict'
 import { describe, expect, test } from '@jest/globals'
-import { sumMethod } from '../jsSource/simpleArraySum_HackerRank'
+import { arraySum as sumMethod } from '../jsSource/simpleArraySum_HackerRank'
 
 describe('testing the sum of array', () => {
   test('test with different inputs for expected outputs', () => {
