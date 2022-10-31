@@ -6,7 +6,7 @@ For example, given the set of words 'quick', 'brown', 'the', 'fox', and the stri
 Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string "bedbathandbeyond", return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond'].
 */
 
-const orginalSentence = function (sentence: string, ...words: string[]): string[] {
+const orginalSentence = function (sentence: string, ...words: string[]): any {
   const orderedWords: string[] = []
   let start = 0; let end = 1
   const sentenceLength: number = sentence.length
