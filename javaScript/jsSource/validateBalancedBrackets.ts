@@ -1,7 +1,5 @@
 'use strict'
 
-const validateBracketString = '{}{{}'
-
 enum brackets {
   openBracket = '(',
   closeBracket = ')',
@@ -9,7 +7,6 @@ enum brackets {
   closeSquareBracket = ']',
   openFlowerBracket = '{',
   closeFloweBracket = '}'
-
 }
 
 const arrayOpenbracketsQueue: string[] = []
@@ -60,4 +57,4 @@ const validateBalancedBrackets = function (stringToValidate: string): any {
   }
 }
 
-console.log(`The given string of brackets are balanced ${validateBalancedBrackets(validateBracketString)}`)
+export { validateBalancedBrackets }
