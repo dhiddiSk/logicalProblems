@@ -1,9 +1,8 @@
 import java.util.HashMap;
 import java.util.Stack;
 
-public class ValidateParanthases {
-
-public boolean isValid(String s) {
+class Solution {
+    public boolean isValid(String s) {
         
         HashMap<Character, Character> hmap = new HashMap<>();
         hmap.put(')', '(');
@@ -22,10 +21,10 @@ public boolean isValid(String s) {
             }
 
            // for closed brackets
-            if((st.size() !=0) && (hmap.get(s.charAt(index)) != st.pop())){
+            if((st.size() ==0) || (hmap.get(s.charAt(index)) != st.pop())){
                     return false;
                 }           
-            }
+        }
             // If the stack is empty, return true...
         if (st.size() == 0) {
             return true;
@@ -33,5 +32,4 @@ public boolean isValid(String s) {
         
 		return false;
         }
-
 }
