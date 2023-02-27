@@ -17,6 +17,8 @@ public class LargestNumber {
 	    };
 
 	    Arrays.sort(numsToStrings, comp);
+	 	// In edge case
+	    if(numsToStrings[0].charAt(0) == '0') return "0";
 
 	    StringBuilder sb = new StringBuilder();
 
